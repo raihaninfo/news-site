@@ -19,7 +19,7 @@
             $sql1 = "INSERT INTO user(first_name, last_name, username,password,role)
                     VALUES('{$fname}','{$lname}', '{$user}','{$password}','{$role}')";
             if(mysqli_query($conn, $sql1)){
-                header("Location: http://localhost/news-site/admin/users.php");
+                header("Location: {$hostname}/admin/users.php");
             }
         }
     }
