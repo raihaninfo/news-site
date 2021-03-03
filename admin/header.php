@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    <?php include"config.php";?>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,8 +27,11 @@
                     </div>
                     <!-- /LOGO -->
                       <!-- LOGO-Out -->
-                    <div class="col-md-offset-9  col-md-1">
-                        <a href="logout.php" class="admin-logout" >logout</a>
+                    <div class="col-md-offset-7 pr-1  col-md-2">
+                        <a style="text-decoration: none;" target="_blank" href="<?php echo $hostname;?>" class="admin-logout btn" >visit site</a>
+                    </div>
+                    <div class="col-md-1">
+                        <a style="text-decoration: none;" href="logout.php" class="admin-logout btn" >logout</a>
                     </div>
                     <!-- /LOGO-Out -->
                 </div>
