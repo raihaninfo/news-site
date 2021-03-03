@@ -1,3 +1,10 @@
+<?php
+include"config.php";
+session_start();
+    if(!isset($_SESSION['username'])){
+        header("Location: {$hostname}/admin/");
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <?php include "config.php"; ?>
@@ -33,7 +40,7 @@
                     <a style="text-decoration: none;" target="_blank" href="<?php echo $hostname; ?>" class="admin-logout btn">visit site</a>
                 </div>
                 <div class="col-md-1">
-                    <a style="text-decoration: none;" href="logout.php" class="admin-logout btn">logout</a>
+                    <a style="text-decoration: none;" href="logout.php" class="admin-logout btn">Hello <?php echo $_SESSION['username']; ?> logout</a>
                 </div>
                 <!-- /LOGO-Out -->
             </div>
@@ -49,12 +56,19 @@
                         <li>
                             <a href="post.php">Post</a>
                         </li>
+                        <?php
+                            if($_SESSION['user_role']=="1"){
+
+                        ?>
                         <li>
                             <a href="category.php">Category</a>
                         </li>
                         <li>
                             <a href="users.php">Users</a>
                         </li>
+                        <?php
+                        }
+                        ?>
                     </ul>
                 </div>
             </div>
