@@ -10,4 +10,3 @@
         echo "Can\'t Delete the User Record.";
     }
     mysqli_close($conn);
-?>
