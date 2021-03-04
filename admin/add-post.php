@@ -7,7 +7,7 @@
             </div>
             <div class="col-md-offset-3 col-md-6">
                 <!-- Form -->
-                <form action="" method="POST" enctype="multipart/form-data">
+                <form action="save-post.php" method="POST" enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="post_title">Title</label>
                         <input type="text" name="post_title" class="form-control" autocomplete="off" required>
@@ -26,13 +26,11 @@
                             $result = mysqli_query($conn, $sql) or die("Query Failed.");
                             if (mysqli_num_rows($result) > 0) {
                                 while($row = mysqli_fetch_assoc($result)){
-                                    echo "<option>{$row['category_name']}</option>";
+                                    echo "<option value='{$row['category_id']}'>{$row['category_name']}</option>";
                                 }
 
                             }
                             ?>
-
-
 
                         </select>
                     </div>
