@@ -36,11 +36,14 @@ session_start();
                 </div>
                 <!-- /LOGO -->
                 <!-- LOGO-Out -->
-                <div class="col-md-offset-7 pr-1  col-md-2">
+                <div class="col-md-offset-5 pr-1  col-md-2">
                     <a style="text-decoration: none;" target="_blank" href="<?php echo $hostname; ?>" class="admin-logout btn">visit site</a>
                 </div>
+                <div class="col-md-2 justify-content-center">
+                    <a style="text-decoration: none;" class="admin-logout btn">Hello <?php echo $_SESSION['username']; ?></a>
+                </div>
                 <div class="col-md-1">
-                    <a style="text-decoration: none;" href="logout.php" class="admin-logout btn">Hello <?php echo $_SESSION['username']; ?> logout</a>
+                    <a style="text-decoration: none;" href="logout.php" class="admin-logout btn">logout</a>
                 </div>
                 <!-- /LOGO-Out -->
             </div>
