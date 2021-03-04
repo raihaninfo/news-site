@@ -1,9 +1,9 @@
 <?php
-include"config.php";
+include "config.php";
 session_start();
-    if(!isset($_SESSION['username'])){
-        header("Location: {$hostname}/admin/");
-    }
+if (!isset($_SESSION['username'])) {
+    header("Location: {$hostname}/admin/");
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -60,15 +60,15 @@ session_start();
                             <a href="post.php">Post</a>
                         </li>
                         <?php
-                            if($_SESSION['user_role']=="1"){
+                        if ($_SESSION['user_role'] == "1") {
 
                         ?>
-                        <li>
-                            <a href="category.php">Category</a>
-                        </li>
-                        <li>
-                            <a href="users.php">Users</a>
-                        </li>
+                            <li>
+                                <a href="category.php">Category</a>
+                            </li>
+                            <li>
+                                <a href="users.php">Users</a>
+                            </li>
                         <?php
                         }
                         ?>

@@ -44,5 +44,3 @@
     }else{
         echo "<div class='alert alert-danger'>Query Failed.</div>";
     }
-
-?>
