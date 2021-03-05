@@ -30,6 +30,10 @@ A simple News Website based on pure PHP Programming Language. It includes both A
 ### Frameworks
 - [ ] Bootstrap
 
+
+### Font support 
+- [ ] fontawesome
+
 ## Install
  `git clone https://github.com/raihaninfo/news-site.git`
 
