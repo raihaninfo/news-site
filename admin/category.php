@@ -80,8 +80,6 @@ if ($_SESSION['user_role'] == "0") {
 
                 ?>
 
-
-
             </div>
         </div>
     </div>

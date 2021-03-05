@@ -33,7 +33,6 @@
                     ORDER BY post.post_id DESC LIMIT {$ofset},{$limit}";
                 }
 
-
                 $result = mysqli_query($conn, $sql) or die("Query Failed.");
                 if (mysqli_num_rows($result) > 0) {
                 ?>
@@ -49,7 +48,6 @@
                         </thead>
                         <tbody>
                             <?php while ($row = mysqli_fetch_assoc($result)) {
-
                             ?>
                                 <tr>
                                     <td class='id'><?php echo $row['post_id']; ?></td>
