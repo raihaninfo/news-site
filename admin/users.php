@@ -58,7 +58,7 @@ if($_SESSION['user_role']=="0"){
                             <?php } ?>
                         </tbody>
                     </table>
-                <?php
+            <?php
                 }
 
                 $sql1 = "SELECT * FROM user";
@@ -86,7 +86,7 @@ if($_SESSION['user_role']=="0"){
                     echo '</ul>';
                 }
 
-                ?>
+            ?>
 
 
 
