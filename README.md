@@ -41,7 +41,7 @@ A simple News Website based on pure PHP Programming Language. It includes both A
 
 
 ## Install
- `git clone https://github.com/raihaninfo/news-site.git`
+    `git clone https://github.com/raihaninfo/news-site.git`
 
 
 Contact Me
