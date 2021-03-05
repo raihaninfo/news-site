@@ -4,34 +4,34 @@ This is open source project
 A simple News Website based on pure PHP Programming Language. It includes both Admin Panel and the User Inteface. 
 
 ### Languages
-1. PHP
-2. Javascript
+- [ ] PHP
+- [ ] Javascript
 
 ### Database
-My SQL
+ - [ ] My SQL
 
 ### UI Design
-1. HTML
-2. CSS
-3. JQUERY
-4. BOOTSTRAP
+ - [ ] HTML
+ - [ ] CSS
+ - [ ] JQUERY
+ - [ ] BOOTSTRAP
 
 ### Supported Browsers
-1. Google Chrome
-2. Opera
-3. Opera GX
-4. Mozilla
-5. internet explorer
-6. etc.
+ - [ ] Google Chrome
+ - [ ] Opera
+ - [ ] Opera GX
+ - [ ] Mozilla
+ - [ ] internet explorer
+ - [ ] etc.
 
 ### Database Software
-AMPPS
+- [ ] AMPPS
 
 ### Frameworks
-1. Bootstrap
+- [ ] Bootstrap
 
 ## Install
-01. `git clone https://github.com/raihaninfo/news-site.git`
+ `git clone https://github.com/raihaninfo/news-site.git`
 
 
 Contact Me
