@@ -2,7 +2,7 @@
     <!-- search box -->
     <div class="search-box-container">
         <h4>Search</h4>
-        <form class="search-post" action="search.php" method ="GET">
+        <form class="search-post" action="search.php" method="GET">
             <div class="input-group">
                 <input type="text" name="search" class="form-control" placeholder="Search .....">
                 <span class="input-group-btn">
@@ -17,7 +17,7 @@
         <h4>Recent Posts</h4>
         <div class="recent-post">
             <a class="post-img" href="">
-                <img src="images/post-format.jpg" alt=""/>
+                <img src="images/post-format.jpg" alt="" />
             </a>
             <div class="post-content">
                 <h5><a href="single.php">Lorem ipsum dolor sit amet</a></h5>
@@ -34,7 +34,7 @@
         </div>
         <div class="recent-post">
             <a class="post-img" href="">
-                <img src="images/post_1.jpg" alt=""/>
+                <img src="images/post_1.jpg" alt="" />
             </a>
             <div class="post-content">
                 <h5><a href="single.php">Lorem ipsum dolor sit amet</a></h5>
@@ -51,7 +51,7 @@
         </div>
         <div class="recent-post">
             <a class="post-img" href="">
-                <img src="images/post-format.jpg" alt=""/>
+                <img src="images/post-format.jpg" alt="" />
             </a>
             <div class="post-content">
                 <h5><a href="single.php">Lorem ipsum dolor sit amet</a></h5>
@@ -68,7 +68,7 @@
         </div>
         <div class="recent-post">
             <a class="post-img" href="">
-                <img src="images/post_1.jpg" alt=""/>
+                <img src="images/post_1.jpg" alt="" />
             </a>
             <div class="post-content">
                 <h5><a href="single.php">Lorem ipsum dolor sit amet</a></h5>
@@ -85,7 +85,7 @@
         </div>
         <div class="recent-post">
             <a class="post-img" href="">
-                <img src="images/post-format.jpg" alt=""/>
+                <img src="images/post-format.jpg" alt="" />
             </a>
             <div class="post-content">
                 <h5><a href="single.php">Lorem ipsum dolor sit amet</a></h5>
@@ -104,9 +104,9 @@
     <!-- /recent posts box -->
     <div class="search-box-container">
         <div class="row">
-        <h4>Facebook</h4>
-        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fraihan901&tabs=timeline&width=340&height=300&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true&appId=298974897931071" width="100%" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            <h4>Facebook</h4>
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fraihan901&tabs=timeline&width=340&height=300&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true&appId=298974897931071" width="100%" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
         </div>
     </div>
-    
+
 </div>

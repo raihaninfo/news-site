@@ -1,15 +1,15 @@
 <?php include 'header.php'; ?>
-    <div id="main-content">
-      <div class="container">
+<div id="main-content">
+    <div class="container">
         <div class="row">
             <div class="col-md-8">
                 <!-- post-container -->
                 <div class="post-container">
-                  <h2 class="page-heading">Category Name</h2>
+                    <h2 class="page-heading">Category Name</h2>
                     <div class="post-content">
                         <div class="row">
                             <div class="col-md-4">
-                                <a class="post-img" href="single.php"><img src="images/post-format.jpg" alt=""/></a>
+                                <a class="post-img" href="single.php"><img src="images/post-format.jpg" alt="" /></a>
                             </div>
                             <div class="col-md-8">
                                 <div class="inner-content clearfix">
@@ -39,7 +39,7 @@
                     <div class="post-content">
                         <div class="row">
                             <div class="col-md-4">
-                                <a class="post-img" href="single.php"><img src="images/post_1.jpg" alt=""/></a>
+                                <a class="post-img" href="single.php"><img src="images/post_1.jpg" alt="" /></a>
                             </div>
                             <div class="col-md-8">
                                 <div class="inner-content clearfix">
@@ -69,7 +69,7 @@
                     <div class="post-content">
                         <div class="row">
                             <div class="col-md-4">
-                                <a class="post-img" href="single.php"><img src="images/post-format.jpg" alt=""/></a>
+                                <a class="post-img" href="single.php"><img src="images/post-format.jpg" alt="" /></a>
                             </div>
                             <div class="col-md-8">
                                 <div class="inner-content clearfix">
@@ -99,7 +99,7 @@
                     <div class="post-content">
                         <div class="row">
                             <div class="col-md-4">
-                                <a class="post-img" href="single.php"><img src="images/post_1.jpg" alt=""/></a>
+                                <a class="post-img" href="single.php"><img src="images/post_1.jpg" alt="" /></a>
                             </div>
                             <div class="col-md-8">
                                 <div class="inner-content clearfix">
@@ -129,7 +129,7 @@
                     <div class="post-content">
                         <div class="row">
                             <div class="col-md-4">
-                                <a class="post-img" href="single.php"><img src="images/post-format.jpg" alt=""/></a>
+                                <a class="post-img" href="single.php"><img src="images/post-format.jpg" alt="" /></a>
                             </div>
                             <div class="col-md-8">
                                 <div class="inner-content clearfix">
@@ -159,7 +159,7 @@
                     <div class="post-content">
                         <div class="row">
                             <div class="col-md-4">
-                                <a class="post-img" href="single.php"><img src="images/post_1.jpg" alt=""/></a>
+                                <a class="post-img" href="single.php"><img src="images/post_1.jpg" alt="" /></a>
                             </div>
                             <div class="col-md-8">
                                 <div class="inner-content clearfix">
@@ -189,7 +189,7 @@
                     <div class="post-content">
                         <div class="row">
                             <div class="col-md-4">
-                                <a class="post-img" href="single.php"><img src="images/post-format.jpg" alt=""/></a>
+                                <a class="post-img" href="single.php"><img src="images/post-format.jpg" alt="" /></a>
                             </div>
                             <div class="col-md-8">
                                 <div class="inner-content clearfix">
@@ -225,6 +225,6 @@
             </div>
             <?php include 'sidebar.php'; ?>
         </div>
-      </div>
     </div>
+</div>
 <?php include 'footer.php'; ?>

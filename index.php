@@ -1,4 +1,4 @@
-<?php include 'header.php';?>
+<?php include 'header.php'; ?>
 <div id="main-content">
     <div class="container">
         <div class="row">
@@ -236,8 +236,8 @@
                     </ul>
                 </div><!-- /post-container -->
             </div>
-            <?php include 'sidebar.php';?>
+            <?php include 'sidebar.php'; ?>
         </div>
     </div>
 </div>
-<?php include 'footer.php';?>
+<?php include 'footer.php'; ?>
