@@ -1,5 +1,5 @@
-<?php include "header.php"; 
-if($_SESSION['user_role']=="0"){
+<?php include "header.php";
+if ($_SESSION['user_role'] == "0") {
     header("Location: {$hostname}/admin/post.php");
 }
 ?>
@@ -58,7 +58,7 @@ if($_SESSION['user_role']=="0"){
                             <?php } ?>
                         </tbody>
                     </table>
-            <?php
+                <?php
                 }
 
                 $sql1 = "SELECT * FROM user";
@@ -86,7 +86,7 @@ if($_SESSION['user_role']=="0"){
                     echo '</ul>';
                 }
 
-            ?>
+                ?>
 
 
 

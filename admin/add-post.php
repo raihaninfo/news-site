@@ -25,10 +25,9 @@
                             $sql = "SELECT * FROM category";
                             $result = mysqli_query($conn, $sql) or die("Query Failed.");
                             if (mysqli_num_rows($result) > 0) {
-                                while($row = mysqli_fetch_assoc($result)){
+                                while ($row = mysqli_fetch_assoc($result)) {
                                     echo "<option value='{$row['category_id']}'>{$row['category_name']}</option>";
                                 }
-
                             }
                             ?>
 
