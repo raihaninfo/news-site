@@ -77,9 +77,7 @@ if ($_SESSION['user_role'] == "0") {
                     }
                     echo '</ul>';
                 }
-
                 ?>
-
             </div>
         </div>
     </div>
