@@ -1,4 +1,4 @@
-<?php include "header.php"; ?>
+<?php include "header.php";?>
 <div id="admin-content">
     <div class="container">
         <div class="row">
@@ -7,19 +7,17 @@
             </div>
             <div class="col-md-offset-3 col-md-6">
                 <?php
-                include "config.php";
-                $post_id = $_GET['id'];
-                $sql = "SELECT post.post_id, post.title, post.description, post.post_img, post.post_date, category.category_name, post.category,  user.username FROM post 
+include "config.php";
+$post_id = $_GET['id'];
+$sql = "SELECT post.post_id, post.title, post.description, post.post_img, post.post_date, category.category_name, post.category,  user.username FROM post
         LEFT JOIN category ON post.category = category.category_id
         LEFT JOIN user ON post.author = user.user_id
         WHERE post.post_id= {$post_id}";
 
-
-
-                $result = mysqli_query($conn, $sql) or die("Query Failed.");
-                if (mysqli_num_rows($result) > 0) {
-                    while ($row = mysqli_fetch_assoc($result)) {
-                ?>
+$result = mysqli_query($conn, $sql) or die("Query Failed.");
+if (mysqli_num_rows($result) > 0) {
+    while ($row = mysqli_fetch_assoc($result)) {
+        ?>
                         <!-- Form for show edit-->
                         <form action="" method="POST" enctype="multipart/form-data" autocomplete="off">
                             <div class="form-group">
@@ -40,22 +38,22 @@
                                 <select name="category" class="form-control">
                                     <option disabled> Select Category</option>
                                     <?php
-                                    include "config.php";
-                                    $sql1 = "SELECT * FROM category";
+include "config.php";
+        $sql1 = "SELECT * FROM category";
 
-                                    $result1 = mysqli_query($conn, $sql1) or die("Query Failed.");
+        $result1 = mysqli_query($conn, $sql1) or die("Query Failed.");
 
-                                    if (mysqli_num_rows($result1) > 0) {
-                                        while ($row1 = mysqli_fetch_assoc($result1)) {
-                                            if ($row['category'] == $row1['category_id']) {
-                                                $selected = "selected";
-                                            } else {
-                                                $selected = "";
-                                            }
-                                            echo "<option {$selected} value='{$row1['category_id']}'>{$row1['category_name']}</option>";
-                                        }
-                                    }
-                                    ?>
+        if (mysqli_num_rows($result1) > 0) {
+            while ($row1 = mysqli_fetch_assoc($result1)) {
+                if ($row['category'] == $row1['category_id']) {
+                    $selected = "selected";
+                } else {
+                    $selected = "";
+                }
+                echo "<option {$selected} value='{$row1['category_id']}'>{$row1['category_name']}</option>";
+            }
+        }
+        ?>
 
                                 </select>
                             </div>
@@ -68,14 +66,14 @@
                             <input type="submit" name="submit" class="btn btn-primary" value="Update" />
                         </form>
                 <?php
-                    }
-                } else {
-                    echo "Result Not Found";
-                }
-                ?>
+}
+} else {
+    echo "Result Not Found";
+}
+?>
                 <!-- Form End -->
             </div>
         </div>
     </div>
 </div>
-<?php include "footer.php"; ?>
+<?php include "footer.php";?>
