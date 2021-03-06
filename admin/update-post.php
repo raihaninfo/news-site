@@ -31,7 +31,7 @@
                                 <label for="exampleInputPassword1"> Description</label>
                                 <textarea name="postdesc" class="form-control" required rows="5">
                 <?php echo $row['description']; ?>
-                </textarea>
+                                </textarea>
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputCategory">Category</label>
