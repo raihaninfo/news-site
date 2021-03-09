@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <span>© Copyright 2019 News | Powered by <a style="text-decoration: none;"href="https://raihan-cv.netlify.app/">Raihan</a></span>
+                <span>© Copyright <?php echo date("Y")?> News | Powered by <a style="text-decoration: none;"href="https://raihan-cv.netlify.app/">Raihan</a></span>
             </div>
         </div>
     </div>
