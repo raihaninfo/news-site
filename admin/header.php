@@ -61,7 +61,6 @@ if (!isset($_SESSION['username'])) {
                         </li>
                         <?php
                         if ($_SESSION['user_role'] == "1") {
-
                         ?>
                             <li>
                                 <a href="category.php">Category</a>

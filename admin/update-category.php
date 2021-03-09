@@ -33,8 +33,6 @@ if (isset($_POST['submit'])) {
                 $result = mysqli_query($conn, $sql) or die("Query Failed.");
                 if (mysqli_num_rows($result) > 0) {
                     while ($row = mysqli_fetch_assoc($result)) {
-
-
                 ?>
                   <form action="<?php $_SERVER['PHP_SELF']; ?>" method ="POST">
                       <div class="form-group">
