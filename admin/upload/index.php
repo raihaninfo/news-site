@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <title>Page Not Found</title>
@@ -57,5 +56,4 @@
   <h1>Page Not Found</h1>
   <p>Sorry, but the page you were trying to view does not exist.</p>
 </body>
-
 </html>
