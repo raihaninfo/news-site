@@ -39,7 +39,6 @@ A simple News Website based on pure PHP Programming Language. It includes both A
     $conn =  mysqli_connect("localhost","root", "mysql", "news") or  die("Connetion failed : "  .mysqli_connect_error());
 
 
-
 ## Install
     git clone https://github.com/raihaninfo/news-site.git
 
