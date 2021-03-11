@@ -15,7 +15,7 @@
                 }
                 $ofset = ($page - 1) * $limit;
 
-                $sql = "SELECT post.post_id, post.title, post.description, post.post_date, category.category_name, user.username, post.category FROM post 
+                $sql = "SELECT post.post_id, post.title, post.description, post.post_date, category.category_name, user.username, post.category, post.post_img FROM post 
                     LEFT JOIN category ON post.category = category.category_id
                     LEFT JOIN user ON post.author = user.user_id
                     ORDER BY post.post_id DESC LIMIT {$ofset},{$limit}";
@@ -28,11 +28,11 @@
                             <div class="post-content">
                                 <div class="row">
                                     <div class="col-md-4">
-                                        <a class="post-img" href="single.php"><img src="images/post-format.jpg" alt="" /></a>
+                                        <a class="post-img" href="single.php?id=<?php echo $row['post_id'] ?>"><img src="admin/upload/<?php echo $row['post_img'] ?>" alt="" /></a>
                                     </div>
                                     <div class="col-md-8">
                                         <div class="inner-content clearfix">
-                                            <h3><a href='single.php'><?php echo $row['title'] ?></a>
+                                            <h3><a href='single.php?id=<?php echo $row['post_id'] ?>'><?php echo $row['title'] ?></a>
                                             </h3>
                                             <div class="post-information">
                                                 <span>
@@ -51,7 +51,7 @@
                                             <p class="description">
                                             <?php echo $row['description'] ?>
                                             </p>
-                                            <a class='read-more pull-right' href='single.php'>read more</a>
+                                            <a class='read-more pull-right' href='single.php?id=<?php echo $row['post_id'] ?>'>read more</a>
                                         </div>
                                     </div>
                             <?php
