@@ -16,7 +16,6 @@
                         if (isset($_GET['cid'])) {
                             $cat_id = $_GET['cid'];
                         }
-
                         /* Calculate Offset Code */
                         $limit = 3;
                         if(isset($_GET['page'])){
@@ -25,7 +24,6 @@
                           $page = 1;
                         }
                         $offset = ($page - 1) * $limit;
-
                         $sql = "SELECT post.post_id, post.title, post.description,post.post_date,post.author,
                         category.category_name,user.username,post.category,post.post_img FROM post
                         LEFT JOIN category ON post.category = category.category_id
@@ -72,15 +70,10 @@
                         }else{
                           echo "<h2>No Record Found.</h2>";
                         }
-
                         // show pagination
-
                         if(mysqli_num_rows($result1) > 0){
-
                           $total_records = $row1['post'];
-
                           $total_page = ceil($total_records / $limit);
-
                           echo '<ul class="pagination admin-pagination">';
                           if($page > 1){
                             echo '<li><a href="index.php?cid='.$cat_id.'&page='.($page - 1).'">Prev</a></li>';

@@ -7,7 +7,6 @@
                     <div class="post-container">
                       <?php
                         include "config.php";
-
                         /* Calculate Offset Code */
                         $limit = 3;
                         if(isset($_GET['page'])){
@@ -16,7 +15,6 @@
                           $page = 1;
                         }
                         $offset = ($page - 1) * $limit;
-
                         $sql = "SELECT post.post_id, post.title, post.description,post.post_date,post.author,
                         category.category_name,user.username,post.category,post.post_img FROM post
                         LEFT JOIN category ON post.category = category.category_id
@@ -62,17 +60,12 @@
                         }else{
                           echo "<h2>No Record Found.</h2>";
                         }
-
                         // show pagination
                         $sql1 = "SELECT * FROM post";
                         $result1 = mysqli_query($conn, $sql1) or die("Query Failed.");
-
                         if(mysqli_num_rows($result1) > 0){
-
                           $total_records = mysqli_num_rows($result1);
-
                           $total_page = ceil($total_records / $limit);
-
                           echo '<ul class="pagination admin-pagination">';
                           if($page > 1){
                             echo '<li><a href="index.php?page='.($page - 1).'">Prev</a></li>';
@@ -88,7 +81,6 @@
                           if($total_page > $page){
                             echo '<li><a href="index.php?page='.($page + 1).'">Next</a></li>';
                           }
-
                           echo '</ul>';
                         }
                         ?>

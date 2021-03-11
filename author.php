@@ -9,13 +9,11 @@
                 include "config.php";
                 if(isset($_GET['aid'])){
                   $auth_id = $_GET['aid'];
-
                   $sql1 = "SELECT * FROM post JOIN user
                           ON post.author = user.user_id
                           WHERE post.author = {$auth_id}";
                   $result1 = mysqli_query($conn, $sql1) or die("Query Failed.");
                   $row1 = mysqli_fetch_assoc($result1);
-
                 ?>
                 <h2 class="page-heading">News By <?php echo $row1['username']; ?></h2>
                 <?php
@@ -75,7 +73,6 @@
                   }else{
                     echo "<h2>No Record Found.</h2>";
                   }
-
                   // show pagination
                   if(mysqli_num_rows($result1) > 0){
 

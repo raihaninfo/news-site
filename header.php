@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +13,6 @@
     <!-- Custom stlylesheet -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
     <!-- HEADER -->
     <div id="header">
@@ -41,13 +39,10 @@
                     if (isset($_GET['cid'])) {
                         $cat_id = $_GET['cid'];
                     }
-
                     $sql = "SELECT * FROM category  WHERE post > 0";
-
                     $result = mysqli_query($conn, $sql) or die("Query Failed. : Category");
                     if (mysqli_num_rows($result) > 0) {
                         $active = "";
-
                     ?>
                         <ul class='menu'>
                         <li><a class='{$active}' href='<?php echo $hostname ?>'>Home</a></li>
@@ -59,7 +54,6 @@
                                         $active = "";
                                     }
                                 }
-
                                 echo  "<li><a class='{$active}' href='category.php?cid={$row['category_id']}'>{$row['category_name']}</a></li>";
                             } ?>
                         </ul>

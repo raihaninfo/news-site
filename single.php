@@ -7,9 +7,7 @@
                 <div class="post-container">
                 <?php
                 include "config.php";
-
                 $post_id = $_GET['id'];
-
                 $sql = "SELECT post.post_id, post.title, post.description, post.author, post.post_date, category.category_name, user.username, post.category, post.post_img FROM post 
                     LEFT JOIN category ON post.category = category.category_id
                     LEFT JOIN user ON post.author = user.user_id
