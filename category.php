@@ -74,10 +74,7 @@
                         }
 
                         // show pagination
-                        
 
-                        
-                        
                         if(mysqli_num_rows($result1) > 0){
 
                           $total_records = $row1['post'];
