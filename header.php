@@ -50,6 +50,7 @@
 
                     ?>
                         <ul class='menu'>
+                        <li><a class='{$active}' href='<?php echo $hostname ?>'>Home</a></li>
                             <?php while ($row = mysqli_fetch_assoc($result)) {
                                 if (isset($_GET['cid'])) {
                                     if ($row['category_id'] == $cat_id) {
