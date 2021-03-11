@@ -4,199 +4,23 @@
         <div class="row">
             <div class="col-md-8">
                 <!-- post-container -->
+                <?php
+                    include"config.php";
+                    $limit = 3;
+
+                    if (isset($_GET['page'])) {
+                        $page = $_GET['page'];
+                    } else {
+                        $page = 1;
+                    }
+                    $ofset = ($page - 1) * $limit;
+
+                    $sql = "SELECT post.post_id, post.title, post.description, post.post_date, category.category_name, user.username, post.category FROM post 
+                    LEFT JOIN category ON post.category = category.category_id
+                    LEFT JOIN user ON post.author = user.user_id
+                    ORDER BY post.post_id DESC LIMIT {$ofset},{$limit}";
+                ?>
                 <div class="post-container">
-                    <div class="post-content">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <a class="post-img" href="single.php"><img src="images/post-format.jpg" alt="" /></a>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="inner-content clearfix">
-                                    <h3><a href='single.php'>Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
-                                    </h3>
-                                    <div class="post-information">
-                                        <span>
-                                            <i class="fa fa-tags" aria-hidden="true"></i>
-                                            <a href='category.php'>PHP</a>
-                                        </span>
-                                        <span>
-                                            <i class="fa fa-user" aria-hidden="true"></i>
-                                            <a href='author.php'>Admin</a>
-                                        </span>
-                                        <span>
-                                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                                            01 Nov, 2019
-                                        </span>
-                                    </div>
-                                    <p class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua....
-                                    </p>
-                                    <a class='read-more pull-right' href='single.php'>read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="post-content">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <a class="post-img" href="single.php"><img src="images/post_1.jpg" alt="" /></a>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="inner-content clearfix">
-                                    <h3><a href='single.php'>Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
-                                    </h3>
-                                    <div class="post-information">
-                                        <span>
-                                            <i class="fa fa-tags" aria-hidden="true"></i>
-                                            <a href='category.php'>PHP</a>
-                                        </span>
-                                        <span>
-                                            <i class="fa fa-user" aria-hidden="true"></i>
-                                            <a href='author.php'>Admin</a>
-                                        </span>
-                                        <span>
-                                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                                            01 Nov, 2019
-                                        </span>
-                                    </div>
-                                    <p class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua....
-                                    </p>
-                                    <a class='read-more pull-right' href='single.php'>read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="post-content">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <a class="post-img" href="single.php"><img src="images/post-format.jpg" alt="" /></a>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="inner-content clearfix">
-                                    <h3><a href='single.php'>Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
-                                    </h3>
-                                    <div class="post-information">
-                                        <span>
-                                            <i class="fa fa-tags" aria-hidden="true"></i>
-                                            <a href='category'>PHP</a>
-                                        </span>
-                                        <span>
-                                            <i class="fa fa-user" aria-hidden="true"></i>
-                                            <a href='author.php'>Admin</a>
-                                        </span>
-                                        <span>
-                                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                                            01 Nov, 2019
-                                        </span>
-                                    </div>
-                                    <p class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua....
-                                    </p>
-                                    <a class='read-more pull-right' href='single.php'>read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="post-content">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <a class="post-img" href="single.php"><img src="images/post_1.jpg" alt="" /></a>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="inner-content clearfix">
-                                    <h3><a href='single.php'>Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
-                                    </h3>
-                                    <div class="post-information">
-                                        <span>
-                                            <i class="fa fa-tags" aria-hidden="true"></i>
-                                            <a href='category.php'>PHP</a>
-                                        </span>
-                                        <span>
-                                            <i class="fa fa-user" aria-hidden="true"></i>
-                                            <a href='author.php'>Admin</a>
-                                        </span>
-                                        <span>
-                                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                                            01 Nov, 2019
-                                        </span>
-                                    </div>
-                                    <p class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua....
-                                    </p>
-                                    <a class='read-more pull-right' href='single.php'>read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="post-content">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <a class="post-img" href="single.php"><img src="images/post-format.jpg" alt="" /></a>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="inner-content clearfix">
-                                    <h3><a href='single.php'>Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
-                                    </h3>
-                                    <div class="post-information">
-                                        <span>
-                                            <i class="fa fa-tags" aria-hidden="true"></i>
-                                            <a href='category.php'>PHP</a>
-                                        </span>
-                                        <span>
-                                            <i class="fa fa-user" aria-hidden="true"></i>
-                                            <a href='author.php'>Admin</a>
-                                        </span>
-                                        <span>
-                                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                                            01 Nov, 2019
-                                        </span>
-                                    </div>
-                                    <p class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua....
-                                    </p>
-                                    <a class='read-more pull-right' href='single.php'>read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="post-content">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <a class="post-img" href="single.php"><img src="images/post_1.jpg" alt="" /></a>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="inner-content clearfix">
-                                    <h3><a href='single.php'>Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
-                                    </h3>
-                                    <div class="post-information">
-                                        <span>
-                                            <i class="fa fa-tags" aria-hidden="true"></i>
-                                            <a href='category.php'>PHP</a>
-                                        </span>
-                                        <span>
-                                            <i class="fa fa-user" aria-hidden="true"></i>
-                                            <a href='author.php'>Admin</a>
-                                        </span>
-                                        <span>
-                                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                                            01 Nov, 2019
-                                        </span>
-                                    </div>
-                                    <p class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua....
-                                    </p>
-                                    <a class='read-more pull-right' href='single.php'>read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="post-content">
                         <div class="row">
                             <div class="col-md-4">
