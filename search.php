@@ -13,7 +13,8 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="inner-content clearfix">
-                                    <h3><a href='single.php'>Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></h3>
+                                    <h3><a href='single.php'>Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+                                    </h3>
                                     <div class="post-information">
                                         <span>
                                             <i class="fa fa-tags" aria-hidden="true"></i>
@@ -29,7 +30,8 @@
                                         </span>
                                     </div>
                                     <p class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua....
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua....
                                     </p>
                                     <a class='read-more pull-right' href='single.php'>read more</a>
                                 </div>
@@ -43,7 +45,8 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="inner-content clearfix">
-                                    <h3><a href='single.php'>Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></h3>
+                                    <h3><a href='single.php'>Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+                                    </h3>
                                     <div class="post-information">
                                         <span>
                                             <i class="fa fa-tags" aria-hidden="true"></i>
@@ -59,7 +62,8 @@
                                         </span>
                                     </div>
                                     <p class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua....
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua....
                                     </p>
                                     <a class='read-more pull-right' href='single.php'>read more</a>
                                 </div>
@@ -73,7 +77,8 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="inner-content clearfix">
-                                    <h3><a href='single.php'>Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></h3>
+                                    <h3><a href='single.php'>Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+                                    </h3>
                                     <div class="post-information">
                                         <span>
                                             <i class="fa fa-tags" aria-hidden="true"></i>
@@ -89,7 +94,8 @@
                                         </span>
                                     </div>
                                     <p class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua....
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua....
                                     </p>
                                     <a class='read-more pull-right' href='single.php'>read more</a>
                                 </div>
@@ -103,7 +109,8 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="inner-content clearfix">
-                                    <h3><a href='single.php'>Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></h3>
+                                    <h3><a href='single.php'>Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+                                    </h3>
                                     <div class="post-information">
                                         <span>
                                             <i class="fa fa-tags" aria-hidden="true"></i>
@@ -119,7 +126,8 @@
                                         </span>
                                     </div>
                                     <p class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua....
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua....
                                     </p>
                                     <a class='read-more pull-right' href='single.php'>read more</a>
                                 </div>
@@ -133,7 +141,8 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="inner-content clearfix">
-                                    <h3><a href='single.php'>Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></h3>
+                                    <h3><a href='single.php'>Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+                                    </h3>
                                     <div class="post-information">
                                         <span>
                                             <i class="fa fa-tags" aria-hidden="true"></i>
@@ -149,7 +158,8 @@
                                         </span>
                                     </div>
                                     <p class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua....
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua....
                                     </p>
                                     <a class='read-more pull-right' href='single.php'>read more</a>
                                 </div>
@@ -163,7 +173,8 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="inner-content clearfix">
-                                    <h3><a href='single.php'>Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></h3>
+                                    <h3><a href='single.php'>Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+                                    </h3>
                                     <div class="post-information">
                                         <span>
                                             <i class="fa fa-tags" aria-hidden="true"></i>
@@ -179,7 +190,8 @@
                                         </span>
                                     </div>
                                     <p class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua....
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua....
                                     </p>
                                     <a class='read-more pull-right' href='single.php'>read more</a>
                                 </div>
@@ -193,7 +205,8 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="inner-content clearfix">
-                                    <h3><a href='single.php'>Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></h3>
+                                    <h3><a href='single.php'>Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+                                    </h3>
                                     <div class="post-information">
                                         <span>
                                             <i class="fa fa-tags" aria-hidden="true"></i>
@@ -209,7 +222,8 @@
                                         </span>
                                     </div>
                                     <p class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua....
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua....
                                     </p>
                                     <a class='read-more pull-right' href='single.php'>read more</a>
                                 </div>
