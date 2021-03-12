@@ -36,4 +36,3 @@
     }else{
         echo "Query Faild.";
     }
-?>
