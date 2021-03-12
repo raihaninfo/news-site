@@ -1,4 +1,4 @@
-# PHP dynamic website
+## PHP dynamic website
 This is open source project
 
 A simple News Website based on pure PHP Programming Language. It includes both Admin Panel and the User Inteface. 
