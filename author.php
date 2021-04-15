@@ -76,7 +76,6 @@
             if (mysqli_num_rows($result1) > 0) {
 
               $total_records = mysqli_num_rows($result1);
-
               $total_page = ceil($total_records / $limit);
 
               echo '<ul class="pagination admin-pagination">';
